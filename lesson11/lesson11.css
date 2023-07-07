@@ -1,0 +1,35 @@
+.clearfix::after(content:""; display:block; clear:both; ) .header {
+    text-align: center;
+    padding: 20px;
+    font-size: 42px;
+    background: yellow;
+}
+
+.wrap clearfix {
+    background: orange;
+}
+
+.menu {
+    float: left;
+    width: 300px;
+    background: red;
+}
+
+.banner {
+    float: right;
+    width: 350px;
+    background: rgb(0, 102, 255);
+}
+
+.content {
+    margin-left: 350px;
+    margin-right: 350px;
+    background: green;
+}
+
+.footer {
+    margin: 0px 0px;
+    padding: 20px;
+    clear: both;
+    background: #fc05eb;
+}

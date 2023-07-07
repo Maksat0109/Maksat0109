@@ -1,0 +1,33 @@
+body>div>ul>li:nth-child(1)>a{
+    color:red
+}
+body>div>ul>li:nth-child(2)>span>a{
+    color: green;
+}
+body>div>ul>li:nth-child(2)>em>a{
+color: blue;
+}
+div>p>em:nth-child(1)>a{
+    color: yellow;
+}
+div>span>em:nth-child(1)>a{
+    color: black;
+}
+body>ul>li:nth-child(1)>a{
+    color: orange;
+}
+body>ul>li>:nth-child(1)>span>a{
+    color: pink;
+}
+body>ul>li>:nth-child(2)>em>a{
+    color: violet
+}
+body>ul>li:nth-child(3)>div>ul>li:nth-child(1)>a{
+    color: indigo;
+}
+body>ul>li:nth-child(3)>div>ul>li:nth-child(2)>em>a{
+    color: chocolate;
+}
+.go{
+    background: red; color: blue; border: solid 3px;
+}

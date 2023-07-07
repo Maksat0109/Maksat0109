@@ -1,0 +1,28 @@
+.name{
+    margin-left: 86px;
+}
+.phone{
+    margin-left: 68px;
+}
+.email{
+    margin-left: 81px;
+}
+.vozrast{
+    margin-left: 64px;
+}
+.pol{
+    margin-left: 99px;
+}
+.man{
+    margin-left: 13px;
+}
+.go{
+    color: red;
+}
+.shrift{
+    font-family:'Courier New', Courier, monospace
+}
+.lets{
+    width: 200px;
+    height: 200px;
+}

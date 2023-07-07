@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style12.css">
+    <title>Form</title>
+</head>
+
+<body>
+<h1>Форма заявки на работу в зоопарке </h1>
+<p class="shrift">Пожалуйста, заполните форму. Обязательные поля помечены<span class="go">*</span></p>
+    <form action=" https://fe.it-academy.by/TestForm.php"></form>
+    <fieldset>
+        <legend>Контактная информация </legend>
+        <label>Имя <span class="go">*</span> 
+            <input type="text" name="name" value="" class="name"> <br>
+            <label>Телефон
+                <input type="text" name="phone" value="" class="phone"> <br>
+                <label>Email<span class="go">*</span>
+                    <input type="text" name="email" value="" class="email"> <br>
+                </label>
+            </label>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Персональная информация</legend>
+        <label>Возраст<span class="go">*</span>
+            <input type="text" name="age" value="" class="vozrast"> <br>
+            <label>Пол
+                <select name="man" size="1" class="pol">
+                    <option value="1">Женщина</option>
+                    <option value="2">Мужчина</option>
+                </select> <br>
+                <label>Перечислите <br>
+                     личные качества
+                    <input type="text" name="man" value="" class="man">
+                </label>
+            </label>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Выберите ваших любимых животных</legend>
+        <input type="checkbox" name="Зебра" value="yes">Зебра
+        <input type="checkbox" name="кошак" value="yes">Кошак
+        <input type="checkbox" name="Анаконда" value="yes">Анаконда
+        <input type="checkbox" name="человек" value="yes">Человек <br>
+        <input type="checkbox" name="Слон" value="yes">Слон
+        <input type="checkbox" name="Антилопа" value="yes">Антилопа
+        <input type="checkbox" name="Голубь" value="yes">Голубь
+        <input type="checkbox" name="Краб" value="yes">Краб
+    </fieldset>
+    <input type='submit' value="Отправить информацию">
+</body>
+
+</html>
