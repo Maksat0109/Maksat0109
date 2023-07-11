@@ -1,4 +1,4 @@
-.clearfix::after(content:""; display:block; clear:both; ) .header {
+.header {
     text-align: center;
     padding: 20px;
     font-size: 42px;
@@ -11,25 +11,24 @@
 
 .menu {
     float: left;
-    width: 300px;
+    width: 350px;
     background: red;
 }
-
 .banner {
     float: right;
     width: 350px;
     background: rgb(0, 102, 255);
 }
 
-.content {
+.go {
     margin-left: 350px;
     margin-right: 350px;
     background: green;
 }
 
-.footer {
+.footer{
     margin: 0px 0px;
-    padding: 20px;
+    padding: 10px;
     clear: both;
     background: #fc05eb;
 }

@@ -1,28 +1,45 @@
-.name{
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+.name {
     margin-left: 86px;
 }
-.phone{
+
+.phone {
     margin-left: 68px;
 }
-.email{
+
+.email {
     margin-left: 81px;
 }
-.vozrast{
+
+.vozrast {
     margin-left: 64px;
 }
-.pol{
+
+.pol {
     margin-left: 99px;
 }
-.man{
+
+.man {
     margin-left: 13px;
 }
-.go{
+
+.go {
     color: red;
 }
-.shrift{
-    font-family:'Courier New', Courier, monospace
+
+.shrift {
+    font-family: 'Courier New', Courier, monospace
 }
-.lets{
+
+.lets {
     width: 200px;
     height: 200px;
+}
+.hi{
+    margin-left: 130px;
 }
