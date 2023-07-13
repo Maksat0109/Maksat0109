@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+.div:hover .layer{
+    top: -70px;
+    transition: 1s;
+}
+.div:hover .upper{
+    top: 165px;
+    transition: 2s;
+}
+.div{
+    position: relative;
+}
+.lower {
+    position: absolute;
+    top: 165px;
+}
+
+.upper {
+    position: absolute;
+    left: 20px;
+    width: 415px;
+    top: 20px;
+}
+.layer {
+    position: absolute;
+    top: -70px;
+    left: -44px;
+    width: 535px;
+}
