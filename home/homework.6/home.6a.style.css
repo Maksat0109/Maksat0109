@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+.a{
+    color: green;
+    border-right: solid red 3px;
+    text-align: center;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+.div1 :nth-child(6n+5){
+border-right: none;
+}
+.div1{
+    margin-top: 25px;
+}
+.div2{
+    margin-top: 25px;
+}
+.div3{
+    margin-top: 25px;
+}
+.div2 a {
+    color: green;
+}
+
+div a div{
+    vertical-align: middle;
+    display: inline-block;
+    margin: 4px 10px 4px 10px;
+    width: 4px;
+    height: 25px;
+    background-color: red;
+}
+div a:hover{
+    color: red;
+}
+.div3 a:hover{ 
+    color: red;
+}
+.div3 ul li{
+    display: inline-block;
+    padding: 4px 10px 4px 10px;
+    border-right: solid 3px red;
+    width: 95px;
+    height: 30px;
+}
+.div3 ul :nth-of-type(10n+5){
+border: none;
+}
+.div3 ul :nth-child(11){
+    border: none;
+}
+.div3 ul li a {
+    color: green;
+}

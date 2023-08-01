@@ -11,7 +11,7 @@
 
 .menu {
     float: left;
-    width: 350px;
+    width: 30%;
     background: red;
 }
 .banner {
@@ -21,8 +21,7 @@
 }
 
 .go {
-    margin-left: 350px;
-    margin-right: 350px;
+    margin: 0px;
     background: green;
 }
 
