@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(217, 163, 246);
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+div hr {
+    height: 5px;
+    background: red
+}
+h1,h2,h3{
+    text-align: center;
+}
+.block {
+    width: 800px;
+    height: auto;
+    border: solid 3px green;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 20px 150px;
+}
+.list{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+}
+a:hover{
+    transform: scale(1.1);
+}
+a{
+    color: blue;
+}

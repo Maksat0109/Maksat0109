@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.anim{
+    width: 1000px;
+    position: relative;
+    background: rgba(0,0,0,0.5);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.anim2{
+    width: 200px;
+    height: 200px;
+    background:blue;
+    border-radius: 50%; 
+    animation: myanimation 4s cubic-bezier(0.4, 0, 0.9, 0.9) infinite
+}
+.anim3{
+    width: 200px;
+    height: 200px;
+    transition: 1s ease;
+    background:yellow; 
+}
+.anim4{
+    width: 200px;
+    height: 200px;
+    transition: 1s ease;
+    background:red;
+}
+.anim5{
+    width: 200px;
+    height: 200px;
+    transition: 1s ease;
+    background: green;
+}
+.anim6{
+    width: 200px;
+    height: 200px;
+    transition: 1s ease;
+    background: purple;
+    animation:both;
+}
+.anim7{
+    width: 200px;
+    height: 200px;
+    transition: 1s ease;
+    background: white;
+}
+.sprite{
+    width: 320px;
+    height: 750px;
+    animation: mysprite 1s steps(2) infinite;
+    margin: 50px auto;
+}
+@keyframes myanimation{
+    0%, 100% {
+    transform: translate(0, 0);
+}
+
+20% {
+    transform: translate(200px, 0);
+}
+40% {
+    transform: translate(200px,200px);
+}
+60% {
+    transform: translate(-200px, 200px);
+}
+80% {
+    transform: translate(-200px, 0px);
+}
+}
+@keyframes mysprite
+{
+    from { background: url(Png.png) 0px 0px no-repeat; }
+    to { background: url(Png.png) -3990px 0px no-repeat; }
+}
+.anim:hover .anim3{
+    background: silver;
+    transform: scale(0.7);
+}
+.anim:hover .anim4{
+    transform: rotate(-50deg);
+}
+.anim:hover .anim5{
+    transform:translatey(-200px);
+}
+.anim:hover .anim6{
+    transform: skewX(50deg);
+}
+.anim:hover .anim7{
+    transform:rotatex(-200deg);
+    background: black;
+}

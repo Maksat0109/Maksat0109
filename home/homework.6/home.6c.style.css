@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.date{
+    color: green;
+}
+.world{
+    color: red;
+    font-weight: bold;
+}
+.link{
+    color: blue;
+}
+.link::before{
+    content: url(extref.png);
+}
+.text{
+    color: blue;
+    font-style: italic;
+}

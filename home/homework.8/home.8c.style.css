@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    display: block;
+}
+div.container{
+    text-align: center;
+    background-color: #19b4e7;
+    color: #282bdd;
+    height: 70px;
+    line-height: 70px;
+}
+.fixed{
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(41 150 14 / 70%);
+    border-color: rgb(53, 149, 53);
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+.menu{
+    background: url(ball.png); 
+    background-repeat:repeat-y;
+    background-position: right top;
+}
+.slider{
+    background: yellow; 
+    width: 250px;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    float: left;
+}
+.h3{
+    text-align: center;
+}
+.content{
+    margin-left: 250px;
+    padding-top: 15px;
+}
+.img{
+    float: left;
+    padding: 0px 20px;
+}
+.content p{
+    text-align: justify;
+    padding: 0px 20px;
+}
+.clear{
+    clear: both;
+}
+.footer{
+    text-align: center;
+    background-color: #19b4e7;
+    color: #282bdd;
+    height: 70px;
+    line-height: 70px;
+}

@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr 80px;
+}
+
+div.container {
+  background-color: #19b4e7;
+  color: #282bdd;
+  height: 70px;
+  line-height: 70px;
+  grid-row: 1;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.menu {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  background: url(ball.png) right top repeat-y;
+  padding: 20px 0 20px 20px;
+}
+
+.slider {
+  background: yellow;
+  padding: 20px;
+  min-width: 250px;
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.h3 {
+  padding: 20px 0 10px 20px;
+}
+
+.h2 {
+  margin: 10px 0;
+}
+
+.content {
+  padding: 20px;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.img {
+  float: left;
+  padding-right: 20px;
+}
+
+a {
+  color: blue;
+}
+
+.content p {
+  text-align: justify;
+  padding: 0px 20px;
+}
+
+.footer {
+  background-color: #19b4e7;
+  color: #282bdd;
+  height: 70px;
+  line-height: 70px;
+  grid-column: 1;
+  grid-row: 3;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}/*# sourceMappingURL=maket_grid.css.map */

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    min-height: 360px;
+    margin-top: 30px;
+}
+.bio{
+    position: absolute;
+    right: 398px;
+}
+.man{
+    position: absolute;
+    left: 150px;
+    top: -48px;
+}
+.yin{
+    position: absolute;
+    right: 270px;
+    top: 145px;
+}
+.smoke{
+    position: absolute;
+}
+.bio:hover{
+    z-index: 1;
+}
+.man:hover{
+    z-index: 1;
+}
+.yin:hover{
+    z-index: 1;
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1000px;
+    height: 105px;
+    margin: 0 auto;
+}
+.star{
+    width: 100px;
+    height: 105px;
+    background: url(star0.png) center no-repeat;
+    float: left;
+}
+.container:hover .star{
+    background:url(star1.png) center no-repeat;
+    width: 100px;
+    height: 105px;
+    transition: 0.5s;
+}
+.star:hover~.star{
+background: url('star0.png') center no-repeat;
+}

@@ -42,10 +42,11 @@ div a:hover{
 }
 .div3 ul li{
     display: inline-block;
-    padding: 4px 10px 4px 10px;
+    padding: 3px 0px 0px 0px;
     border-right: solid 3px red;
-    width: 95px;
-    height: 30px;
+    width: 125px;
+    height: 23px;
+    margin-bottom: 5px;
 }
 .div3 ul :nth-of-type(10n+5){
 border: none;

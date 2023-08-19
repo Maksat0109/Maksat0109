@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: start;
+}
+.name1{
+    display: inline-block;
+}
+.name2{
+    display: inline-block;
+    margin-left: 60px;
+    width: 50%;
+}
+.name2 input{
+    width: 100%;
+}
+.wrapper1{
+display: flex;
+justify-content: flex-start;
+margin-top: 4px;
+}
+.program2{
+    margin-left: 116px;
+    width: 35%;
+}
+.program2 select{
+    width: 100%;
+}
+.wrapper2{
+    display: flex;
+    justify-content: start;
+    margin-top: 4px;
+}
+.public2{
+    margin-left: 90px;
+}
+div{
+    display: block;
+}
+.wrapper3{
+    display: flex;
+    justify-content: start;
+}

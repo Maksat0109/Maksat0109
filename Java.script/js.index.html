@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #app{
+            display: flex;
+            width: 1500px;
+            margin: 0 auto;
+            flex-flow: wrap;
+            justify-content: space-between;
+        }
+        #app > div{
+            margin-bottom: 40px;
+            transition: 0.5s;
+        }
+        #app > div:hover{
+            transform: scale(1.1);
+            z-index: 999;
+        }
+        div > img{
+            width: 300px;
+            border: solid 1px yellow;
+        }
+        .card-img-top{
+            width: 200px;
+            height: 300px;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button onclick="render()">render iphones</button>
+
+    <div id="app"></div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+
+        var iphones = [
+            {
+                price: "1300$",
+                model: "Iphone 14 pro",
+                year: "2022",
+                color: "violet",
+                isSale: false,
+                imgUrl: "https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/230419122631770899/230420090623721757.png@webp"
+            },
+            {
+                price: "1200$",
+                model: "Iphone 13 pro",
+                year: "2021",
+                color: "gold",
+                isSale: false,
+                imgUrl: "https://di-smart.by/wp-content/uploads/2021/09/iphone-13-pro-max-gold-select.png"
+            },
+            {
+                price: "1000$",
+                model: "Iphone 12 pro",
+                year: "2020",
+                color: "black",
+                isSale: true,
+                imgUrl: "https://shop.mts.by/upload/resize_cache/webp/iblock/1aa/31dqpnt8sbop7gue8lot1cpmf3s8ruyg/270_500_1/blue-1.webp"
+            },
+            {
+                price: "900$",
+                model: "samsung s22 ultra",
+                year: "2022",
+                color:"black",
+                isSale: true,
+                imgUrl: "https://img.5element.by/import/images/ut/goods/good_ccfdaa0a-f92b-11ec-bb95-0050560120e8/sm-s908bzkgcau-chernyy-fantom-256gb-telefon-gsm-samsung-galaxy-s22-ultra-1_600.jpg"
+            },
+            {
+                price: "500$",
+                model: "sony",
+                year: "2018",
+                color: "black",
+                isSale: true,
+                imgUrl: "https://shop.by/images/sony_xperia_c3_dual_2.webp"
+            },
+            {
+                price: "1300$",
+                model: "Iphone 14 pro",
+                year: "2022",
+                color: "violet",
+                isSale: false,
+                imgUrl: "https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/230419122631770899/230420090623721757.png@webp"
+            },
+            {
+                price: "1200$",
+                model: "Iphone 13 pro",
+                year: "2021",
+                color: "gold",
+                isSale: false,
+                imgUrl: "https://di-smart.by/wp-content/uploads/2021/09/iphone-13-pro-max-gold-select.png"
+            },
+            {
+                price: "1000$",
+                model: "Iphone 12 pro",
+                year: "2020",
+                color: "black",
+                isSale: true,
+                imgUrl: "https://shop.mts.by/upload/resize_cache/webp/iblock/1aa/31dqpnt8sbop7gue8lot1cpmf3s8ruyg/270_500_1/blue-1.webp"
+            }, {
+                price: "1300$",
+                model: "Iphone 14 pro",
+                year: "2022",
+                color: "violet",
+                isSale: false,
+                imgUrl: "https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/230419122631770899/230420090623721757.png@webp"
+            },
+            {
+                price: "1200$",
+                model: "Iphone 13 pro",
+                year: "2021",
+                color: "gold",
+                isSale: false,
+                imgUrl: "https://di-smart.by/wp-content/uploads/2021/09/iphone-13-pro-max-gold-select.png"
+            },
+            {
+                price: "1000$",
+                model: "Iphone 12 pro",
+                year: "2020",
+                color: "black",
+                isSale: true,
+                imgUrl: "https://shop.mts.by/upload/resize_cache/webp/iblock/1aa/31dqpnt8sbop7gue8lot1cpmf3s8ruyg/270_500_1/blue-1.webp"
+            }, {
+                price: "1300$",
+                model: "Iphone 14 pro",
+                year: "2022",
+                color: "violet",
+                isSale: false,
+                imgUrl: "https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/230419122631770899/230420090623721757.png@webp"
+            },
+            {
+                price: "1200$",
+                model: "Iphone 13 pro",
+                year: "2021",
+                color: "gold",
+                isSale: false,
+                imgUrl: "https://di-smart.by/wp-content/uploads/2021/09/iphone-13-pro-max-gold-select.png"
+            },
+            {
+                price: "1000$",
+                model: "Iphone 12 pro",
+                year: "2020",
+                color: "black",
+                isSale: true,
+                imgUrl: "https://shop.mts.by/upload/resize_cache/webp/iblock/1aa/31dqpnt8sbop7gue8lot1cpmf3s8ruyg/270_500_1/blue-1.webp"
+            }, {
+                price: "1300$",
+                model: "Iphone 14 pro",
+                year: "2022",
+                color: "violet",
+                isSale: false,
+                imgUrl: "https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/230419122631770899/230420090623721757.png@webp"
+            },
+            {
+                price: "1200$",
+                model: "Iphone 13 pro",
+                year: "2021",
+                color: "gold",
+                isSale: false,
+                imgUrl: "https://di-smart.by/wp-content/uploads/2021/09/iphone-13-pro-max-gold-select.png"
+            },
+            {
+                price: "1000$",
+                model: "Iphone 12 pro",
+                year: "2020",
+                color: "black",
+                isSale: true,
+                imgUrl: "https://shop.mts.by/upload/resize_cache/webp/iblock/1aa/31dqpnt8sbop7gue8lot1cpmf3s8ruyg/270_500_1/blue-1.webp"
+            }, {
+                price: "1300$",
+                model: "Iphone 14 pro",
+                year: "2022",
+                color: "violet",
+                isSale: false,
+                imgUrl: "https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/230419122631770899/230420090623721757.png@webp"
+            },
+            {
+                price: "1200$",
+                model: "Iphone 13 pro",
+                year: "2021",
+                color: "gold",
+                isSale: false,
+                imgUrl: "https://di-smart.by/wp-content/uploads/2021/09/iphone-13-pro-max-gold-select.png"
+            },
+            {
+                price: "1000$",
+                model: "Iphone 12 pro",
+                year: "2020",
+                color: "black",
+                isSale: true,
+                imgUrl: "https://shop.mts.by/upload/resize_cache/webp/iblock/1aa/31dqpnt8sbop7gue8lot1cpmf3s8ruyg/270_500_1/blue-1.webp"
+            }, {
+                price: "1300$",
+                model: "Iphone 14 pro",
+                year: "2022",
+                color: "violet",
+                isSale: false,
+                imgUrl: "https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/230419122631770899/230420090623721757.png@webp"
+            },
+            {
+                price: "1200$",
+                model: "Iphone 13 pro",
+                year: "2021",
+                color: "gold",
+                isSale: false,
+                imgUrl: "https://di-smart.by/wp-content/uploads/2021/09/iphone-13-pro-max-gold-select.png"
+            },
+            {
+                price: "1000$",
+                model: "Iphone 12 pro",
+                year: "2020",
+                color: "black",
+                isSale: true,
+                imgUrl: "https://shop.mts.by/upload/resize_cache/webp/iblock/1aa/31dqpnt8sbop7gue8lot1cpmf3s8ruyg/270_500_1/blue-1.webp"
+            },
+            {
+                price: "1300$",
+                model: "Iphone 14 pro",
+                year: "2022",
+                color: "violet",
+                isSale: false,
+                imgUrl: "https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/230419122631770899/230420090623721757.png@webp"
+            },
+            {
+                price: "1200$",
+                model: "Iphone 13 pro",
+                year: "2021",
+                color: "gold",
+                isSale: false,
+                imgUrl: "https://di-smart.by/wp-content/uploads/2021/09/iphone-13-pro-max-gold-select.png"
+            },
+            {
+                price: "1000$",
+                model: "Iphone 12 pro",
+                year: "2020",
+                color: "black",
+                isSale: true,
+                imgUrl: "https://shop.mts.by/upload/resize_cache/webp/iblock/1aa/31dqpnt8sbop7gue8lot1cpmf3s8ruyg/270_500_1/blue-1.webp"
+            }, {
+                price: "1300$",
+                model: "Iphone 14 pro",
+                year: "2022",
+                color: "violet",
+                isSale: false,
+                imgUrl: "https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/230419122631770899/230420090623721757.png@webp"
+            },
+            {
+                price: "1200$",
+                model: "Iphone 13 pro",
+                year: "2021",
+                color: "gold",
+                isSale: false,
+                imgUrl: "https://di-smart.by/wp-content/uploads/2021/09/iphone-13-pro-max-gold-select.png"
+            },
+            {
+                price: "1000$",
+                model: "Iphone 12 pro",
+                year: "2020",
+                color: "black",
+                isSale: true,
+                imgUrl: "https://shop.mts.by/upload/resize_cache/webp/iblock/1aa/31dqpnt8sbop7gue8lot1cpmf3s8ruyg/270_500_1/blue-1.webp"
+            }, {
+                price: "1300$",
+                model: "Iphone 14 pro",
+                year: "2022",
+                color: "violet",
+                isSale: false,
+                imgUrl: "https://cdn0.i-store.by/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/230419122631770899/230420090623721757.png@webp"
+            },
+            {
+                price: "1200$",
+                model: "Iphone 13 pro",
+                year: "2021",
+                color: "gold",
+                isSale: false,
+                imgUrl: "https://di-smart.by/wp-content/uploads/2021/09/iphone-13-pro-max-gold-select.png"
+            },
+            {
+                price: "1000$",
+                model: "Iphone 12 pro",
+                year: "2020",
+                color: "black",
+                isSale: true,
+                imgUrl: "https://shop.mts.by/upload/resize_cache/webp/iblock/1aa/31dqpnt8sbop7gue8lot1cpmf3s8ruyg/270_500_1/blue-1.webp"
+            }
+
+        ]
+
+        var app = document.getElementById("app");
+
+        function render(){
+            var iphonesHtml = "";
+
+            for(var i=0; i<iphones.length; i++){
+                iphonesHtml+=`
+                    <div class="card" style="width: 200px;">
+                        <img src="${iphones[i].imgUrl}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">${iphones[i].price}</h3>
+                                <h4 class="card-title">${iphones[i].model}</h4>
+                                <h5 class="card-title">${iphones[i].year}</h5>
+                                <p class="card-title">${iphones[i].color}</p>
+
+                                ${iphones[i].isSale ? `<h5 class='iphone-title'>isSale</h5>`: ""}
+                            </div>
+                    </div>
+                    `
+            }
+            
+            app.innerHTML = iphonesHtml;
+        }
+        
+    </script>
+
+
+</body>
+</html>
