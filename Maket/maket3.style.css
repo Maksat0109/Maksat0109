@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headerfon {
+  height: 100px;
+  background: #172027;
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.container .headerimg {
+  width: 203px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.container .ul1 {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+.container .imgtel::before {
+  content: url(../Maket/Images/telegram.png);
+}
+.container .imgwhat::before {
+  content: url(/Maket/Images/whatsapp\ \(1\).png);
+}
+.container .imgviber::before {
+  content: url(/Maket/Images/viber.png);
+}
+.container .imgcall::before {
+  content: url(/Maket/Images/call\ 1.png);
+}
+.container .ul1 li {
+  color: var(--text-2, #FFF);
+  text-align: center;
+  font-family: Museo Sans Cyrl 700;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 20px;
+}
+.container .btn {
+  width: 180px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 43px;
+  background: var(--gradient, linear-gradient(360deg, #077A34 0%, #19E270 100%));
+  box-shadow: 0px 9px 48px 0px rgba(24, 220, 109, 0.15);
+}
+.container .p1 {
+  color: var(--text-2, #FFF);
+  text-align: center;
+  font-family: Museo Sans Cyrl 700;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menufon {
+  background: #f2f2f3;
+  height: 47px;
+}
+
+.container .wrapper {
+  height: 47px;
+  line-height: 47px;
+}
+.container .ul2 {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.container .menu3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.container .menuimg {
+  width: 757px;
+  height: 568px;
+  border-radius: 10px;
+  background: url(Images/Tesla.png) lightgray 0px 0px/100.088% 100% no-repeat;
+  box-shadow: 0px 5px 48px 0px rgba(49, 47, 47, 0.1);
+}
+.container .menu3 h2 {
+  color: var(--text, #0F0F10);
+  font-family: Museo Sans Cyrl 700;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96.5%;
+  text-align: center;
+}
+.container .menuul {
+  width: 369px;
+  height: 489px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 5px 48px 0px rgba(49, 47, 47, 0.1);
+  margin-top: 55px;
+}
+.container .menuul li {
+  list-style-type: none;
+  margin: 26px 0 20px 0;
+}
+.container .menup1 {
+  color: var(--text, #0F0F10);
+  font-family: Museo Sans Cyrl 700;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+}
+.container .menup2 {
+  color: var(--text, #0F0F10);
+  font-family: Museo Sans Cyrl 300;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+}
+
+.container .imgcontent {
+  display: flex;
+  justify-content: start;
+  width: 757px;
+  align-items: center;
+}
+.container .imgtesla {
+  width: 175px;
+  height: 131px;
+}
+
+.container .banner3 {
+  margin-top: 57px;
+}
+.container .banner3 h2 {
+  color: var(--text, #0F0F10);
+  font-family: Museo Sans Cyrl 700;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96.5%;
+}
+.container .banner3 p {
+  color: var(--text, #0F0F10);
+  font-family: Museo Sans Cyrl 300;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  margin-top: 34px;
+}
+.container .banner3btn {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 53px 0 100px 0;
+}
+.container .bannerbtn1 {
+  width: 263px;
+  height: 52px;
+  border-radius: 43px;
+  background: var(--gradient, linear-gradient(360deg, #077A34 0%, #19E270 100%));
+  box-shadow: 0px 9px 48px 0px rgba(24, 220, 109, 0.15);
+}
+.container .bannerbtn2 {
+  width: 263px;
+  height: 52px;
+  border-radius: 43px;
+  background: var(--gradient-2, linear-gradient(360deg, #A8180F 0%, #DD463D 100%));
+  box-shadow: 0px 9px 48px 0px rgba(211, 61, 52, 0.24);
+}
+.container .banner3btn p {
+  color: var(--text-2, #FFF);
+  text-align: center;
+  font-family: Museo Sans Cyrl 700;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer {
+  height: 331px;
+  background: #797C7D;
+}
+
+.container .ulfooter {
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+.container .imgfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.container .textfooter {
+  margin-top: 15px;
+}
+
+.cars:hover {
+  transform: scale(1.1);
+  transition: 0, 5s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0, 5s;
+}
+
+.bmw:hover {
+  transform: scale(1.1);
+  transition: 0, 5s;
+}
+
+.ul2 li:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+.ul1 li:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=maket3.style.css.map */

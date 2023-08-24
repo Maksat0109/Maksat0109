@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerfon {
+    height: 100px;
+    background: #172027;
+}
+
+.container {
+    width: 1150px;
+    margin: 0 auto;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+
+    .headerimg {
+        width: 203px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .ul1 {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    .imgtel::before {
+        content: url(../Maket/Images/telegram.png);
+    }
+
+    .imgwhat::before {
+        content: url(/Maket/Images/whatsapp\ \(1\).png);
+    }
+
+    .imgviber::before {
+        content: url(/Maket/Images/viber.png);
+    }
+
+    .imgcall::before {
+        content: url(/Maket/Images/call\ 1.png);
+    }
+
+    .ul1 li {
+        color: var(--text-2, #FFF);
+        text-align: center;
+        font-family: Museo Sans Cyrl 700;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 20px;
+    }
+
+    .btn {
+        width: 180px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 43px;
+        background: var(--gradient, linear-gradient(360deg, #077A34 0%, #19E270 100%));
+        box-shadow: 0px 9px 48px 0px rgba(24, 220, 109, 0.15);
+    }
+
+    .p1 {
+        color: var(--text-2, #FFF);
+        text-align: center;
+        font-family: Museo Sans Cyrl 700;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.menufon {
+    background: #f2f2f3;
+    height: 47px;
+}
+
+.container {
+    .wrapper {
+        height: 47px;
+        line-height: 47px;
+    }
+
+    .ul2 {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+}
+
+.container {
+    .h1content {
+        width: 606px;
+        height: 39px;
+        flex-shrink: 0;
+        color: var(--text, #0F0F10);
+        font-family: Museo Sans Cyrl 700;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 96.5%;
+        margin: 0 auto;
+        margin-top: 96px;
+        margin-bottom: 70px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cars {
+        width: 368px;
+        height: 694px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 9px 49px 0px rgba(142, 136, 136, 0.16);
+        margin-bottom: 20px;
+    }
+
+    .h3content {
+        width: 368px;
+        height: 27px;
+        flex-shrink: 0;
+        color: var(--text, #0F0F10);
+        font-family: Museo Sans Cyrl 700;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 96.5%;
+        text-align: center;
+        margin: 30px 0 30px 0;
+    }
+
+    .ul5 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 5px;
+    }
+
+    .ul5 li,
+    .p5 {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        margin: 7px 0 15px 0;
+    }
+
+    .imgchassis::before {
+        content: url(Images/chassis\ 1.png);
+    }
+
+    .imgdistance::before {
+        content: url(Images/distance\ 1.png);
+    }
+
+    .imgspeed::before {
+        content: url(Images/speedometer\ 1.png);
+    }
+
+    .imgcalendar::before {
+        content: url(Images/calendar\ 1.png);
+    }
+
+    .imgprice::before {
+        content: url(Images/price-tag\ 1.png);
+    }
+
+    .p4 {
+        color: var(--text, #0F0F10);
+        font-family: Museo Sans Cyrl 700;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 111%;
+        padding-left: 10px;
+    }
+
+    .p5 {
+        color: var(--text, #0F0F10);
+        font-family: Museo Sans Cyrl 300;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 111%;
+        margin-bottom: 5px;
+    }
+
+    .btn3 {
+        width: 263px;
+        height: 52px;
+        border-radius: 43px;
+        background: var(--gradient, linear-gradient(360deg, #077A34 0%, #19E270 100%));
+        box-shadow: 0px 9px 48px 0px rgba(24, 220, 109, 0.15);
+        margin: 0 auto;
+        margin-left: 52px;
+    }
+}
+
+.container {
+    .icons {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        padding: 80px 0 100px 0;
+        align-items: center;
+    }
+
+    .icons img {
+        width: 18px;
+        height: 17px;
+    }
+
+    .icons ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    .icons ul li {
+        width: 73px;
+        height: 73px;
+        background: #C6C5C5;
+        border-radius: 50%;
+        position: relative;
+        margin: 0 5px 0 5px;
+    }
+
+    .icons ul li.iconsli1 {
+        background: #0F0F10;
+    }
+
+    .iconsli1 p {
+        color: var(--text-2, #FFF);
+        font-family: Museo Sans Cyrl 700;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 96.5%;
+    }
+
+    .iconsp {
+        width: 16px;
+        height: 23px;
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        color: var(--text, #0F0F10);
+        font-family: Museo Sans Cyrl 700;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 96.5%;
+    }
+}
+
+.footer {
+    height: 331px;
+    background: #797C7D;
+}
+
+.container {
+    .ulfooter {
+        padding-top: 100px;
+        padding-bottom: 75px;
+    }
+
+    .imgfooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .textfooter {
+        margin-top: 15px;
+    }
+}
+.cars:hover{
+    transform: scale(1.1);
+    transition: 0,5s;
+  }
+  button:hover{
+  transform: scale(1.1);
+  transition: 0,5s;
+  }
+  .bmw:hover{
+    transform: scale(1.1);
+    transition: 0,5s;
+  }
+  .ul2 li:hover{
+    transform: scale(1.1);
+    color: red;
+  }
+  .ul1 li:hover{
+    transform: scale(1.1);
+  }

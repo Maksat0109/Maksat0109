@@ -48,8 +48,21 @@ ul {
   list-style-type: none;
 }
 
+.contacts li {
+  display: flex;
+  align-items: center;
+}
+
 .imgloc::before {
   content: url(ci_location.png);
+}
+
+.imgphone::before {
+  content: url(carbon_phone-filled.png);
+}
+
+.imgmail::before {
+  content: url(fluent_mail-16-filled.png);
 }
 
 .zapis {
@@ -444,6 +457,7 @@ tr td p span {
 .fon {
   background: rgba(0, 0, 0, 0.1);
   height: 588px;
+  margin-top: 170px;
 }
 
 .footer {
@@ -491,6 +505,7 @@ tr td p span {
   margin-top: 25px;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .img2 {
@@ -544,4 +559,4 @@ hr {
   line-height: 140%; /* 19.6px */
   opacity: 0.5;
   margin: 20px 0 20px 0;
-}/*# sourceMappingURL=style14.css.map */
+}/*# sourceMappingURL=spanish.style.css.map */

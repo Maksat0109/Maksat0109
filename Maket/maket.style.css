@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headerfon {
+  height: 100px;
+  background: #172027;
+}
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.headerimg {
+  width: 203px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.ul1 {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+.imgtel::before {
+  content: url(../Maket/Images/telegram.png);
+}
+
+.imgwhat::before {
+  content: url(/Maket/Images/whatsapp\ \(1\).png);
+}
+
+.imgviber::before {
+  content: url(/Maket/Images/viber.png);
+}
+
+.imgcall::before {
+  content: url(/Maket/Images/call\ 1.png);
+}
+
+.ul1 li {
+  color: var(--text-2, #FFF);
+  text-align: center;
+  font-family: Museo Sans Cyrl 700;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+.btn {
+  width: 180px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 43px;
+  background: var(--gradient, linear-gradient(360deg, #077A34 0%, #19E270 100%));
+  box-shadow: 0px 9px 48px 0px rgba(24, 220, 109, 0.15);
+}
+
+.p1 {
+  color: var(--text-2, #FFF);
+  text-align: center;
+  font-family: Museo Sans Cyrl 700;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.wrapper {
+  height: 47px;
+  line-height: 47px;
+}
+
+.ul2 {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.slider {
+  background: url(Images/street.png) lightgray 50%/cover no-repeat;
+  height: 753px;
+}
+
+.bmw {
+  background: url(Images/BMW-i3.png), no-repeat, linear-gradient(46deg, rgba(0, 0, 0, 0.58) 0, 0.01%, rgba(0, 0, 0, 0) 100%);
+  width: 751px;
+  height: 588px;
+  flex-shrink: 0;
+  position: relative;
+  left: 660px;
+  bottom: 220px;
+}
+
+.block1 {
+  width: 580px;
+  height: 225px;
+  position: relative;
+  top: 219px;
+}
+
+.h1slider {
+  width: 580px;
+  height: 80px;
+  flex-shrink: 0;
+  color: var(--text-2, #FFF);
+  font-family: Museo Sans Cyrl 700;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96.5%;
+}
+
+.p2 {
+  width: 487px;
+  height: 47px;
+  flex-shrink: 0;
+  color: var(--text-2, #FFF);
+  font-family: Museo Sans Cyrl 300;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.ul3 {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+.btn1 {
+  width: 263px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 43px;
+  background: var(--gradient, linear-gradient(360deg, #077A34 0%, #19E270 100%));
+  box-shadow: 0px 9px 48px 0px rgba(24, 220, 109, 0.15);
+}
+
+.btn2 {
+  width: 263px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 43px;
+  background: var(--gradient-2, linear-gradient(360deg, #A8180F 0%, #DD463D 100%));
+  box-shadow: 0px 9px 48px 0px rgba(211, 61, 52, 0.24);
+}
+
+.button {
+  width: 255px;
+  margin: 0 auto;
+}
+
+.textbtn {
+  color: var(--text-2, #FFF);
+  text-align: center;
+  font-family: Museo Sans Cyrl 700;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.block2 {
+  width: 998px;
+  height: 90px;
+  position: relative;
+  top: 390px;
+}
+
+.ul4 {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+.imggroup::before {
+  content: url(Images/group\ 1.png);
+}
+
+.imginfo::before {
+  content: url(Images/information\ 1.png);
+}
+
+.imgbattery::before {
+  content: url(Images/battery\ 1.png);
+}
+
+.p3 {
+  color: var(--text-2, #FFF);
+  font-family: Museo Sans Cyrl 300;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+.ul4 li {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cars {
+  width: 368px;
+  height: 694px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 9px 49px 0px rgba(142, 136, 136, 0.16);
+}
+
+.h1content {
+  width: 606px;
+  height: 39px;
+  flex-shrink: 0;
+  color: var(--text, #0F0F10);
+  font-family: Museo Sans Cyrl 700;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96.5%;
+  margin: 0 auto;
+  margin-top: 96px;
+  margin-bottom: 70px;
+}
+
+.h3content {
+  width: 368px;
+  height: 27px;
+  flex-shrink: 0;
+  color: var(--text, #0F0F10);
+  font-family: Museo Sans Cyrl 700;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96.5%;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+.ul5 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ul5 li,
+.p5 {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 7px 0 15px 0;
+}
+
+.imgchassis::before {
+  content: url(Images/chassis\ 1.png);
+}
+
+.imgdistance::before {
+  content: url(Images/distance\ 1.png);
+}
+
+.imgspeed::before {
+  content: url(Images/speedometer\ 1.png);
+}
+
+.imgcalendar::before {
+  content: url(Images/calendar\ 1.png);
+}
+
+.imgprice::before {
+  content: url(Images/price-tag\ 1.png);
+}
+
+.p4 {
+  color: var(--text, #0F0F10);
+  font-family: Museo Sans Cyrl 700;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  padding-left: 10px;
+}
+
+.p5 {
+  color: var(--text, #0F0F10);
+  font-family: Museo Sans Cyrl 300;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  margin-bottom: 5px;
+}
+
+.btn3 {
+  width: 263px;
+  height: 52px;
+  border-radius: 43px;
+  background: var(--gradient, linear-gradient(360deg, #077A34 0%, #19E270 100%));
+  box-shadow: 0px 9px 48px 0px rgba(24, 220, 109, 0.15);
+  margin: 0 auto;
+  margin-left: 52px;
+}
+
+.btn4 {
+  width: 263px;
+  height: 52px;
+  border-radius: 43px;
+  background: var(--gradient-2, linear-gradient(360deg, #A8180F 0%, #DD463D 100%));
+  box-shadow: 0px 9px 48px 0px rgba(211, 61, 52, 0.24);
+  text-align: center;
+  margin: 60px 0 100px 0;
+}
+
+.menu {
+  height: 699px;
+  background: #EEE;
+  box-shadow: 0px 9px 49px 0px rgba(142, 136, 136, 0.16);
+}
+
+.menutext {
+  padding-top: 1px;
+}
+
+.ul6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 55px;
+}
+
+.ul6 li {
+  display: flex;
+  align-items: start;
+}
+
+.imgeco::before {
+  content: url(Images/eco\ 1.png);
+}
+
+.imgtruck::before {
+  content: url(Images/truck\ 1.png);
+}
+
+.imgsecure::before {
+  content: url(Images/secure\ 1.png);
+}
+
+.imgsetting::before {
+  content: url(Images/settings\ 1.png);
+}
+
+.imgservice::before {
+  content: url(Images/repairing-service\ 1.png);
+}
+
+.imggrowth::before {
+  content: url(Images/growth\ 1.png);
+}
+
+.h4 {
+  color: var(--text, #0F0F10);
+  font-family: Museo Sans Cyrl 700;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 111%;
+  margin-left: 10px;
+}
+
+.p6 {
+  width: 236px;
+  height: 163px;
+  color: var(--text, #0F0F10);
+  font-family: Museo Sans Cyrl 300;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+}
+
+.h1banner {
+  color: var(--text, #0F0F10);
+  font-family: Museo Sans Cyrl 700;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96.5%;
+}
+
+.map {
+  background: url(Images/map.png) lightgray 50%/cover no-repeat;
+  box-shadow: 0px 5px 48px 0px rgba(49, 47, 47, 0.1);
+  height: 785px;
+  margin-top: 70px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.imgcar {
+  width: 368px;
+  height: 478px;
+}
+
+.imgcar img {
+  width: 368px;
+  height: 217px;
+  margin-left: -25px;
+}
+
+.p7 {
+  width: 368px;
+  height: 78px;
+  color: var(--text, #0F0F10);
+  font-family: Museo Sans Cyrl 700;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96.5%;
+  margin: 0 auto;
+  margin: 10px 0 10px 0;
+}
+
+.p8 {
+  width: 368px;
+  height: 131px;
+  color: var(--text, #0F0F10);
+  font-family: Museo Sans Cyrl 300;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+}
+
+.footer {
+  height: 331px;
+  background: #797C7D;
+}
+
+.ulfooter {
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+
+.imgfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.textfooter {
+  margin-top: 15px;
+}
+
+.cars:hover {
+  transform: scale(1.1);
+  transition: 0, 5s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0, 5s;
+}
+
+.bmw:hover {
+  transform: scale(1.1);
+  transition: 0, 5s;
+}
+
+.ul2 li:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+.ul1 li:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=maket.style.css.map */
